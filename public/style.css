@@ -1,0 +1,100 @@
+*, *::before, *:after {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+body {
+  height: 80vh;
+  background-color: green;
+}
+
+.heading {
+  white-space: none;
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+input {
+  padding: 20px;
+}
+
+.container {
+  margin-top: 50%;
+  /* background-color: cornflowerblue; */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textbox-n {
+  padding: 20px;
+}
+
+.container input {
+  border-radius: 40px;
+}
+
+.container:focus {
+  border: none
+}
+
+label {
+  color: white;
+}
+
+.btn-submit {
+  background: white;
+  outline: none;
+  z-index: 1;
+  margin-top: 40px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 30px;
+}
+
+.btn-submit:hover {
+  background-color: rgba(255, 255, 255, 0.848);
+}
+
+input[type = "date" i] {
+  width: 220px;
+}
+
+.home-image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 400px;
+  overflow: -moz-hidden-unscrollable;
+  background-size: cover;
+  height: 800px;
+}
+
+.aButton {
+  position: relative;
+  /* background-color: aqua; */
+}
+
+#test {
+  width: 137px;
+    height: 41px;
+  position: absolute;
+  bottom: 0;
+}
+
+#output-message {
+  display: flex;
+  font-family: 'Inconsolata', monospace;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 50px;
+  color: white;
+}

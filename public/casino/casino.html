@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Inconsolata:wght@400;500&family=Orbitron&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header__top">
+    <span class="heading__balance">Your Balance:</span>
+    <span class="price" id="balance">$5000</span>
+  </div>
+  <section class="mid__section">
+    <div class="slidecontainer">
+      <input type="range" min="50" max="5000" value="2500" class="slider" id="myRange" step="55">
+      <h1>You bet: <span id="bet__amount">$2500</span></h1>
+    </div>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="10" value="1" class="slider" id="guessRange" step="1">
+      <h1>Your Guessed Number: <span id="number__guess">1</span></h1>
+    </div>
+    <div class="randomNumberGenerator">
+      <button id="spin-btn" class="spin-btn">SPIN</button>
+    </div>
+    <div class="final__output">
+      <span class="your__number">Your Number is:<span id="final__number">7</span></span>
+      <h1 id="final__message">Welcome</h1>
+    </div>
+  </section>
+    <script src="./casino.js"></script>
+</body>
+</html>
